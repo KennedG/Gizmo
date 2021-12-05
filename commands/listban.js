@@ -18,7 +18,7 @@ exports.run = async (client, message) => { // eslint-disable-line no-unused-vars
                     switch (r.emoji.name) {
                         case '✅':
 
-                            msg.reactions.map(re => re.remove(client.user))}
+                            msg.reactions.map(re => re.remove(client.user))
                             message.guild.fetchBans().then(async (bans) => {
                                 message.channel.send('Enviei a lista de bans no seu privado!');
 
